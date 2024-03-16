@@ -1,9 +1,11 @@
 // ignore: file_names
+//import 'dart:ffi';
+
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+part 'result.freezed.dart';
 
-
-
+part 'result.g.dart';
 
 @freezed
 class Result with _$Result
@@ -12,6 +14,7 @@ class Result with _$Result
     required bool adult,
     // ignore: non_constant_identifier_names
     required String backdrop_parh,
+    //required Array of int genre_ids,
     required int id,
     // ignore: non_constant_identifier_names
     required String original_language,
